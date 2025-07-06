@@ -13,12 +13,22 @@
 <body>
   <h1>Generate a<br/><span>random password</span></h1>
   <p>Never use an insecure password again.</p>
+  <div class="pass-length-container">
+    <label for="pass-length">Set password length (Minimum 10 characters)</label>
+    <input type="number" min="10" id="pass-length"/>
+  </div>
   <button onclick="generatePass()">Generate passwords</button>
+  <input type="checkbox" id="no-numbers"/>
+  <label for="no-numbers">Without Numbers</label>
+  <input type="checkbox" id="no-symbols"/>
+  <label for="no-symbols">Without Symbols</label>
   <hr>
   <div class="grid">
     <div id="password-one"></div>
     <div id="password-two"></div>
   </div>
+  <div id="message-one"></div>
+  <div id="message-two"></div>
   <script src="index.js"></script>
 </body>
 </html>
